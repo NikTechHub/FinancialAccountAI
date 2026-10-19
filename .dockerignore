@@ -1,0 +1,30 @@
+# Build output
+target/
+**/target/
+
+# Version control and IDE files
+.git/
+.gitignore
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+Thumbs.db
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Local runtime data
+storage/
+logs/
+*.log
+
+# Compose/runbook files are not needed in the build context. The Dockerfile
+# itself is intentionally left available to the builder.
+docker-compose.yml
+.dockerignore
+README.md

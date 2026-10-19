@@ -1,0 +1,51 @@
+package com.example.accounting.audit;
+
+/**
+ * Controlled audit action vocabulary. Only events the system actually
+ * produces are listed; no action is recorded for functionality that does
+ * not exist (no logout, no user update/deactivate, no member removal,
+ * no organization update, no token refresh audit).
+ */
+public enum AuditAction {
+    LOGIN_SUCCESS,
+    LOGIN_FAILURE,
+    USER_CREATED,
+    MEMBER_ADDED,
+    ORGANIZATION_CREATED,
+    VENDOR_CREATED,
+    VENDOR_UPDATED,
+    VENDOR_DEACTIVATED,
+    CUSTOMER_CREATED,
+    CUSTOMER_UPDATED,
+    CUSTOMER_DEACTIVATED,
+    ACCOUNT_CREATED,
+    ACCOUNT_UPDATED,
+    ACCOUNT_DEACTIVATED,
+    JOURNAL_ENTRY_CREATED,
+    JOURNAL_ENTRY_UPDATED,
+    JOURNAL_ENTRY_POSTED,
+    JOURNAL_ENTRY_VOIDED,
+    EXPENSE_CREATED,
+    EXPENSE_UPDATED,
+    EXPENSE_RECORDED,
+    EXPENSE_VOIDED,
+    INVOICE_CREATED,
+    INVOICE_UPDATED,
+    INVOICE_ISSUED,
+    INVOICE_VOIDED,
+    DOCUMENT_UPLOADED,
+    DOCUMENT_DELETED,
+    OCR_REQUESTED,
+    OCR_COMPLETED,
+    OCR_FAILED,
+    DOCUMENT_EXTRACTION_REQUESTED,
+    DOCUMENT_EXTRACTION_COMPLETED,
+    DOCUMENT_EXTRACTION_FAILED,
+    DOCUMENT_REVIEW_CREATED,
+    DOCUMENT_REVIEW_UPDATED,
+    DOCUMENT_REVIEW_APPROVED,
+    DOCUMENT_REVIEW_REJECTED,
+    DOCUMENT_REVIEW_REOPENED,
+    REPORT_VIEWED,
+    ASSISTANT_QUERY
+}
